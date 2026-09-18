@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PeaceToggle Research Hub</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  min-height:100vh;font-family:Arial,Helvetica,sans-serif;
+  background:#0f172a;color:#f8fafc;display:flex;
+  align-items:center;justify-content:center;padding:30px
+}
+.container{width:100%;max-width:900px;text-align:center}
+.logo{font-size:42px;margin-bottom:10px}
+h1{font-size:clamp(32px,6vw,56px);margin-bottom:12px}
+h1 span{color:#3b82f6}
+.subtitle{color:#94a3b8;font-size:16px;margin-bottom:45px}
+.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.research-btn{
+  border:1px solid #334155;border-radius:18px;padding:30px 20px;
+  min-height:190px;background:#1e293b;color:white;cursor:pointer;
+  transition:.25s ease;display:flex;flex-direction:column;
+  align-items:center;justify-content:center
+}
+.research-btn:hover{
+  transform:translateY(-6px);border-color:#3b82f6;
+  background:#26364d;box-shadow:0 15px 35px rgba(0,0,0,.3)
+}
+.icon{font-size:42px;margin-bottom:18px}
+.research-btn h2{font-size:18px;margin-bottom:8px}
+.research-btn p{color:#94a3b8;font-size:13px;line-height:1.5}
+footer{margin-top:45px;color:#64748b;font-size:12px}
+@media(max-width:750px){
+  .buttons{grid-template-columns:1fr}
+  .research-btn{min-height:150px}
+}
+</style>
+</head>
+
+<body>
+<main class="container">
+  <div class="logo">⚡</div>
+  <h1>Peace<span>Toggle</span></h1>
+  <p class="subtitle">Digital Wellbeing & Market Research Hub</p>
+
+  <div class="buttons">
+    <button class="research-btn"
+      onclick="openPage('digital_wellbeing_infographic_spa.html')">
+      <div class="icon">📊</div>
+      <h2>Digital Wellbeing</h2>
+      <p>Explore the digital wellbeing infographic and screen-time insights.</p>
+    </button>
+
+    <button class="research-btn"
+      onclick="openPage('digital_wellbeing_market_research_infographic.html')">
+      <div class="icon">📈</div>
+      <h2>Market Research</h2>
+      <p>Explore the digital wellbeing market research and industry insights.</p>
+    </button>
+
+    <button class="research-btn"
+      onclick="openPage('global_and_india_social_media_demographics_2026.html')">
+      <div class="icon">🌍</div>
+      <h2>Social Media Demographics</h2>
+      <p>Explore global and India social media demographics for 2026.</p>
+    </button>
+  </div>
+
+  <footer>PeaceToggle Research • 2026</footer>
+</main>
+
+<script>
+function openPage(fileName) {
+  window.location.href = fileName;
+}
+</script>
+</body>
+</html>
